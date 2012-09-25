@@ -1,0 +1,20 @@
+<dwr>
+  <allow>
+    <create creator="new" javascript="ClienteControlador">
+      <param name="class" value="com.keila.controlador.ClienteControlador"/>      
+    </create>
+    <create creator="new" javascript="MarcaControlador">
+      <param name="class" value="com.keila.controlador.MarcaControlador"/>      
+    </create>
+    <create creator="new" javascript="ProdutoControlador">
+      <param name="class" value="com.keila.controlador.ProdutoControlador"/>      
+    </create>
+    <convert converter="bean" match="com.keila.model.Cliente"/>
+    <convert converter="bean" match="com.keila.model.Marca"/>
+    <convert converter="bean" match="com.keila.model.Produto"/>
+    <!--
+    <create creator="new" javascript="Demo">
+      <param name="class" value="your.java.Bean"/>
+    </create> -->
+  </allow>
+</dwr>
